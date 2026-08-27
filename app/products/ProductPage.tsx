@@ -23,15 +23,41 @@ type ProductEvidence = {
   notes: string[];
 };
 
-const productSetupFigures: Partial<
-  Record<Product["slug"], { src: string; alt: string; caption: string }[]>
-> = {
+type SetupFacts = {
+  title: string;
+  tiles: { value: string; label: string }[];
+  noteTitle: string;
+  noteBody: string;
+};
+
+type SetupFigure = {
+  src: string;
+  alt: string;
+  caption: string;
+  facts?: SetupFacts;
+};
+
+const productSetupFigures: Partial<Record<Product["slug"], SetupFigure[]>> = {
   "utilities-coops": [
     {
-      src: "/product01-distribution-system.png",
-      alt: "SmartDSS randomized distribution system topology for held-out case 00741",
+      src: "/feeder-radial.svg",
+      alt: "Radial distribution feeder topology: 500 buses branching from a single substation",
       caption:
-        "A held-out SmartDSS/OpenDSS distribution system used in the zero-shot evaluation. The model receives circuit topology, line parameters, phase loads, device states, and operating snapshots.",
+        "A SmartDSS/OpenDSS distribution system drawn from its exported graph. Rings are distance from the substation and line weight follows downstream load, so the feeder backbone reads as the backbone.",
+      facts: {
+        title: "Held-out system facts",
+        tiles: [
+          { value: "271", label: "buses" },
+          { value: "270", label: "radial line segments" },
+          { value: "19384.2", label: "kW total load" },
+          { value: "11", label: "maximum tree depth" },
+          { value: "12.47 kV", label: "line-to-line base" },
+          { value: "3-phase", label: "imbalanced feeder model" },
+        ],
+        noteTitle: "What the model receives",
+        noteBody:
+          "Raw DSS circuit files plus operating snapshots: topology, line parameters, phase loads, and device states. The learned solver must produce voltage phasors without retraining on this topology.",
+      },
     },
     {
       src: "/product01-transfer-distribution-rich.png",
@@ -207,8 +233,28 @@ export function ProductPage({ product }: ProductPageProps) {
           </div>
           <div className="setup-figures">
             {setupFigures.map((figure) => (
-              <figure key={figure.src}>
-                <img src={figure.src} alt={figure.alt} />
+              <figure
+                className={figure.facts ? "split" : undefined}
+                key={figure.src}
+              >
+                <div className="setup-figure-body">
+                  <img src={figure.src} alt={figure.alt} />
+                  {figure.facts ? (
+                    <div className="setup-facts">
+                      <h3>{figure.facts.title}</h3>
+                      <div className="setup-facts-grid">
+                        {figure.facts.tiles.map((tile) => (
+                          <div key={tile.label}>
+                            <strong>{tile.value}</strong>
+                            <span>{tile.label}</span>
+                          </div>
+                        ))}
+                      </div>
+                      <h4>{figure.facts.noteTitle}</h4>
+                      <p>{figure.facts.noteBody}</p>
+                    </div>
+                  ) : null}
+                </div>
                 <figcaption>{figure.caption}</figcaption>
               </figure>
             ))}
