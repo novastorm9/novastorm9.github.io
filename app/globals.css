@@ -1555,41 +1555,42 @@ h3 {
   }
 }
 
-/* Brand acronym expansion in the hero */
-.brand-definition {
-  display: inline-flex;
-  align-items: baseline;
-  flex-wrap: wrap;
-  gap: 10px 14px;
-  margin-bottom: 28px;
-  padding: 9px 16px 9px 13px;
-  border-left: 2px solid var(--green);
-  border-radius: 0 6px 6px 0;
-  background: rgba(44, 139, 102, 0.07);
+/* MIND acronym band */
+.mind-expansion {
+  width: min(1240px, 100%);
+  margin: 0 auto clamp(44px, 5vw, 68px);
+  padding-bottom: clamp(38px, 4vw, 56px);
+  border-bottom: 1px solid var(--line);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: clamp(18px, 2.4vw, 34px);
 }
 
-.brand-definition-key {
+.mind-letter {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding-left: clamp(14px, 1.4vw, 20px);
+  border-left: 2px solid rgba(44, 139, 102, 0.4);
+}
+
+.mind-letter span {
   color: var(--green);
-  font-family: var(--font-geist-mono), monospace;
-  font-size: 12px;
-  font-weight: 650;
-  letter-spacing: 0.06em;
+  font-size: clamp(58px, 8vw, 108px);
+  font-weight: 560;
+  line-height: 0.88;
+  letter-spacing: -0.02em;
 }
 
-.brand-definition-value {
-  color: #3f4852;
-  font-size: 15px;
-  line-height: 1.4;
-}
-
-.brand-definition-value em {
+.mind-letter strong {
   color: var(--ink);
-  font-style: normal;
-  font-weight: 680;
+  font-size: clamp(15px, 1.35vw, 20px);
+  font-weight: 620;
+  line-height: 1.2;
 }
 
 /* Research papers */
-.research-section {
+.mind-section {
   padding: clamp(76px, 10vw, 128px) clamp(20px, 4vw, 72px);
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
@@ -1689,6 +1690,11 @@ h3 {
 @media (max-width: 1040px) {
   .paper-grid {
     grid-template-columns: 1fr;
+  }
+
+  .mind-expansion {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: clamp(24px, 4vw, 38px);
   }
 }
 

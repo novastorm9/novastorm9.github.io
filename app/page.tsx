@@ -80,6 +80,13 @@ const ArrowIcon = () => (
   </svg>
 );
 
+const mindLetters = [
+  ["M", "Manifold"],
+  ["I", "Informed"],
+  ["N", "Neural"],
+  ["D", "Dual-encoder"],
+];
+
 const papers = [
   {
     id: "2606.00716",
@@ -125,13 +132,6 @@ export default function Home() {
               changing power networks, reasons from sparse measurements, and
               reports when an operator can trust the result.
             </p>
-            <p className="brand-definition">
-              <span className="brand-definition-key">MIND</span>
-              <span className="brand-definition-value">
-                <em>M</em>anifold-<em>I</em>nformed <em>N</em>eural{" "}
-                <em>D</em>ual-encoder
-              </span>
-            </p>
             <div className="hero-actions">
               <a className="primary-action" href="/platform">
                 Explore platform
@@ -153,6 +153,50 @@ export default function Home() {
         <div className="signal-strip" aria-label="Platform signals">
           {signals.map((signal) => (
             <span key={signal}>{signal}</span>
+          ))}
+        </div>
+      </section>
+
+      <section className="mind-section" id="research">
+        <div
+          className="mind-expansion"
+          aria-label="MIND stands for Manifold-Informed Neural Dual-encoder"
+        >
+          {mindLetters.map(([letter, word]) => (
+            <div className="mind-letter" key={letter}>
+              <span aria-hidden="true">{letter}</span>
+              <strong>{word}</strong>
+            </div>
+          ))}
+        </div>
+
+        <div className="section-heading">
+          <p className="eyebrow">Research</p>
+          <h2>The technology behind WattsMIND Grid Agent</h2>
+        </div>
+
+        <div className="paper-grid">
+          {papers.map((paper) => (
+            <a
+              className="paper-card"
+              href={paper.href}
+              target="_blank"
+              rel="noreferrer"
+              key={paper.id}
+            >
+              <span className="paper-icon" aria-hidden="true">
+                {paper.icon}
+              </span>
+              <div className="paper-copy">
+                <span className="paper-id">arXiv:{paper.id}</span>
+                <h3>{paper.title}</h3>
+                <p className="paper-authors">{paper.authors}</p>
+                <p className="paper-note">{paper.note}</p>
+              </div>
+              <span className="paper-arrow" aria-hidden="true">
+                <ArrowIcon />
+              </span>
+            </a>
           ))}
         </div>
       </section>
@@ -286,37 +330,6 @@ export default function Home() {
               <strong>{value}</strong>
               <span>{label}</span>
             </div>
-          ))}
-        </div>
-      </section>
-
-      <section className="research-section" id="research">
-        <div className="section-heading">
-          <p className="eyebrow">Research</p>
-          <h2>The methods behind the engine, published in full.</h2>
-        </div>
-        <div className="paper-grid">
-          {papers.map((paper) => (
-            <a
-              className="paper-card"
-              href={paper.href}
-              target="_blank"
-              rel="noreferrer"
-              key={paper.id}
-            >
-              <span className="paper-icon" aria-hidden="true">
-                {paper.icon}
-              </span>
-              <div className="paper-copy">
-                <span className="paper-id">arXiv:{paper.id}</span>
-                <h3>{paper.title}</h3>
-                <p className="paper-authors">{paper.authors}</p>
-                <p className="paper-note">{paper.note}</p>
-              </div>
-              <span className="paper-arrow" aria-hidden="true">
-                <ArrowIcon />
-              </span>
-            </a>
           ))}
         </div>
       </section>
