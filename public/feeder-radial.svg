@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1671" width="1600" height="1671" role="img" aria-label="Distribution feeder topology drawn at real bus coordinates">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1722" width="1600" height="1722" role="img" aria-label="Distribution feeder topology drawn at real bus coordinates">
 <g stroke="#63788c" stroke-linecap="round" fill="none">
 <line x1="851.7" y1="921.8" x2="842.5" y2="974.9" stroke-width="0.68" stroke-opacity="0.43"/>
 <line x1="737.3" y1="486.2" x2="694.5" y2="450.5" stroke-width="0.69" stroke-opacity="0.43"/>
@@ -1003,10 +1003,10 @@
 </g>
 <circle cx="888.8" cy="709.2" r="13" fill="none" stroke="#071d38" stroke-width="1.4" stroke-opacity="0.35"/>
 <circle cx="888.8" cy="709.2" r="6.5" fill="#071d38"/>
-<circle cx="64.0" cy="1644.6" r="6.5" fill="#071d38"/>
-<text x="78.0" y="1649.6" font-family="Geist, ui-sans-serif, system-ui, -apple-system, sans-serif" font-size="15" fill="#5e6874">substation</text>
-<circle cx="194.0" cy="1644.6" r="4" fill="#2c8b66"/>
-<text x="206.0" y="1649.6" font-family="Geist, ui-sans-serif, system-ui, -apple-system, sans-serif" font-size="15" fill="#5e6874">load bus (area = kW)</text>
-<line x1="394.0" y1="1644.6" x2="430.0" y2="1644.6" stroke="#63788c" stroke-width="3.2" stroke-linecap="round"/>
-<text x="442.0" y="1649.6" font-family="Geist, ui-sans-serif, system-ui, -apple-system, sans-serif" font-size="15" fill="#5e6874">line (width = downstream kW)</text>
+<circle cx="79.3" cy="1682.9" r="15.3" fill="#071d38"/>
+<text x="106.5" y="1694.8" font-family="Geist, ui-sans-serif, system-ui, -apple-system, sans-serif" font-size="34.0" fill="#5e6874">substation</text>
+<circle cx="332.6" cy="1682.9" r="10.2" fill="#2c8b66"/>
+<text x="364.9" y="1694.8" font-family="Geist, ui-sans-serif, system-ui, -apple-system, sans-serif" font-size="34.0" fill="#5e6874">load bus (area = kW)</text>
+<line x1="764.4" y1="1682.9" x2="800.1" y2="1682.9" stroke="#63788c" stroke-width="6.8" stroke-linecap="round"/>
+<text x="806.9" y="1694.8" font-family="Geist, ui-sans-serif, system-ui, -apple-system, sans-serif" font-size="34.0" fill="#5e6874">line (width = downstream kW)</text>
 </svg>
