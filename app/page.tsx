@@ -16,8 +16,8 @@ const bottlenecks = [
 ];
 
 const stack = [
-  ["Universal GCN", "Transfers across grid size, topology, and sensors."],
-  ["Teacher-student geometry", "Learns from dense physics, deploys on sparse field data."],
+  ["Manifold-informed transfer", "Maps grid structure and observations into a shared operating geometry."],
+  ["Neural dual-encoder", "Keeps a deployable pathway aligned with the physics pathway used in training."],
   ["Feasible control manifold", "Selects constraint-satisfying actions in real time."],
 ];
 
@@ -111,7 +111,7 @@ const papers = [
 export const metadata: Metadata = {
   title: "WattsMIND Grid Agent | Certifiable AI for Power Grid Control",
   description:
-    "WattsMIND Grid Agent is a topology-invariant, zero-shot foundation model for electric power system monitoring, control, and market intelligence.",
+    "WattsMIND is a Manifold-Informed Neural Dual-encoder for certifiable power system monitoring, control, and market intelligence.",
 };
 
 export default function Home() {
@@ -132,14 +132,6 @@ export default function Home() {
               changing power networks, reasons from sparse measurements, and
               reports when an operator can trust the result.
             </p>
-            <div className="hero-actions">
-              <a className="primary-action" href="/platform">
-                Explore platform
-              </a>
-              <a className="secondary-action" href="/technology">
-                How it works
-              </a>
-            </div>
           </div>
 
           <figure className="hero-visual">
@@ -245,8 +237,8 @@ export default function Home() {
             </div>
             <div className="architecture-core">
               <span>WattsMIND Grid Agent engine</span>
-              <strong>Transferable grid representation</strong>
-              <p>Physics-distilled model with per-instance feasibility checks.</p>
+              <strong>Manifold-Informed Neural Dual-encoder</strong>
+              <p>Transferable grid representation with per-instance feasibility checks.</p>
             </div>
             <div className="architecture-column output-column">
               <span>Products</span>

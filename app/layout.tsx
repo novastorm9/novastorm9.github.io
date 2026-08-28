@@ -14,10 +14,10 @@ const geistMono = Geist_Mono({
 
 const siteTitle = "WattsMIND Grid Agent | Certifiable AI for Power Grid Control";
 const siteDescription =
-  "A topology-invariant, zero-shot foundation model for electric power system monitoring, control, and market intelligence.";
+  "WattsMIND is a Manifold-Informed Neural Dual-encoder for zero-shot power system monitoring, control, and market intelligence.";
 
 // Static export has no per-request headers, so the public origin is fixed here.
-const siteUrl = "https://novastorm9.github.io";
+const siteUrl = "https://gridmind.ece.cornell.edu";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: siteTitle,
     description:
-      "Certifiable AI for power grid monitoring and control across changing network topologies.",
+      "Manifold-Informed Neural Dual-encoder for certifiable power grid monitoring and control.",
     type: "website",
     images: [
       {
