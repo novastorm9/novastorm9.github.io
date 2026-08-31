@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { SiteNav } from "../components/SiteNav";
 
 export const metadata: Metadata = {
-  title: "Company | WattsMIND Grid Agent",
+  title: "Company | MIND FM x (Grid Agent)",
   description:
-    "WattsMIND Grid Agent company page for a power systems AI venture commercializing certifiable grid foundation models.",
+    "MIND FM x (Grid Agent) company page for a power systems AI venture commercializing certifiable grid foundation models.",
 };
 
 const principles = [
@@ -21,7 +21,7 @@ export default function CompanyPage() {
         <p className="eyebrow">Company</p>
         <h1>Commercializing certifiable grid foundation models.</h1>
         <p>
-          WattsMIND Grid Agent brings together power-systems control, graph learning, and
+          MIND FM x (Grid Agent) brings together power-systems control, graph learning, and
           commercialization work aimed at turning university-grade inventions
           into deployable infrastructure software.
         </p>

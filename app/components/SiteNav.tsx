@@ -7,11 +7,11 @@ export function SiteNav({ context = "internal" }: SiteNavProps) {
 
   return (
     <nav className="topbar" aria-label="Primary navigation">
-      <a className="brand" href={homeHref} aria-label="WattsMIND Grid Agent home">
+      <a className="brand" href={homeHref} aria-label="MIND FM x (Grid Agent) home">
         <span className="brand-mark" aria-hidden="true">
-          W
+          M
         </span>
-        <span>WattsMIND Grid Agent</span>
+        <span>MIND FM x (Grid Agent)</span>
       </a>
       <div className="nav-links" aria-label="Site sections">
         <a href="/platform">Platform</a>

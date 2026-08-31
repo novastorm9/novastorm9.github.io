@@ -116,13 +116,13 @@ const productSetups: Partial<Record<Product["slug"], ProductSetup>> = {
     ariaLabel: "Transmission contingency framework",
     eyebrow: "High-level framework",
     title: "One transmission engine, multiple operating questions.",
-    body: "WattsMIND Grid Agent is short for Manifold-Informed Neural Dual-encoder. For transmission operations, it maps grid cases, injections, topology changes, reliability constraints, dispatch context, and market conditions into decision products: voltage prediction, contingency screening, constraint-risk ranking, dispatch feasibility, market sensitivity, and verification targets.",
+    body: "MIND is short for Manifold-Informed Neural Dual-encoder. For transmission operations, it maps grid cases, injections, topology changes, reliability constraints, dispatch context, and market conditions into decision products: voltage prediction, contingency screening, constraint-risk ranking, dispatch feasibility, market sensitivity, and verification targets.",
     figures: [
       {
         src: "/product03-framework.png",
-        alt: "WattsMIND Grid Agent high-level framework for transmission prediction, contingency screening, OPF dispatch, and verification",
+        alt: "MIND FM x (Grid Agent) high-level framework for transmission prediction, contingency screening, OPF dispatch, and verification",
         caption:
-          "High-level product flow for transmission: operating context enters WattsMIND Grid Agent; prediction, screening, OPF dispatch, feasibility, sensitivity, and verification products go back to grid workflows.",
+          "High-level product flow for transmission: operating context enters MIND FM x (Grid Agent); prediction, screening, OPF dispatch, feasibility, sensitivity, and verification products go back to grid workflows.",
       },
     ],
   },
@@ -248,7 +248,7 @@ const productEvidence: Partial<Record<Product["slug"], ProductEvidence>> = {
     layout: "wide",
     eyebrow: "Application 01",
     title: "Voltage prediction under contingencies.",
-    body: "The core transmission use case is fast contingency screening. WattsMIND Grid Agent predicts both voltage magnitude and phase angle while the network topology changes under single- and double-contingency regimes, giving operators an early view of where the grid is becoming stressed.",
+    body: "The core transmission use case is fast contingency screening. MIND FM x (Grid Agent) predicts both voltage magnitude and phase angle while the network topology changes under single- and double-contingency regimes, giving operators an early view of where the grid is becoming stressed.",
     condition:
       "Experiment: ACTIVSg500 transmission benchmark under Base-N, N-1, and N-2 operating regimes. The evidence includes benchmark-level error, inference speed, and same-bus true/predicted voltage traces over sampled operating points.",
     figures: [
@@ -262,7 +262,7 @@ const productEvidence: Partial<Record<Product["slug"], ProductEvidence>> = {
         src: "/product03-voltage-contingencies.png",
         alt: "True and predicted voltage magnitude and phase angle under N-1 and N-2 contingency regimes",
         caption:
-          "Voltage prediction examples at the same monitored bus under N-1 and N-2 contingency regimes. Each panel compares simulator ground truth with WattsMIND Grid Agent prediction over sampled operating points.",
+          "Voltage prediction examples at the same monitored bus under N-1 and N-2 contingency regimes. Each panel compares simulator ground truth with MIND FM x (Grid Agent) prediction over sampled operating points.",
       },
     ],
     metrics: [
@@ -295,7 +295,7 @@ const productControlEvidence: Partial<Record<Product["slug"], ProductEvidence>> 
   "utilities-coops": {
     eyebrow: "Application 02",
     title: "Agent control for cyber-attack mitigation.",
-    body: "A cyber attack can push controllable devices in directions that amplify phase imbalance. WattsMIND Grid Agent observes the attacked operating trajectory and learns corrective control that suppresses imbalance close to the optimal controller.",
+    body: "A cyber attack can push controllable devices in directions that amplify phase imbalance. MIND FM x (Grid Agent) observes the attacked operating trajectory and learns corrective control that suppresses imbalance close to the optimal controller.",
     condition:
       "Experiment: device-level 30% attack scenarios perturb phase behavior across SmartDSS random systems. The learned controller is compared against zero mitigation and an optimal control reference over the same attack rollout.",
     figures: [
@@ -334,13 +334,13 @@ const productControlEvidence: Partial<Record<Product["slug"], ProductEvidence>> 
     layout: "wide",
     eyebrow: "Application 02",
     title: "OPF and uncertain OPF for fast feasible dispatch.",
-    body: "Beyond screening contingencies, WattsMIND Grid Agent can support operating decisions that must balance economics, voltage recovery, thermal security, generator limits, and ramping behavior. The product view is not a replacement for the EMS solver; it is a fast feasibility-aware decision layer that proposes high-quality dispatch targets before slower optimization becomes the bottleneck.",
+    body: "Beyond screening contingencies, MIND FM x (Grid Agent) can support operating decisions that must balance economics, voltage recovery, thermal security, generator limits, and ramping behavior. The product view is not a replacement for the EMS solver; it is a fast feasibility-aware decision layer that proposes high-quality dispatch targets before slower optimization becomes the bottleneck.",
     condition:
       "Experiment: IEEE 30-bus AC OPF over a 300-step dispatch rollout, evaluated in both nominal conditions and branch-admittance uncertainty. The uncertain OPF setting perturbs the network model while preserving the same AC-flow, thermal, voltage, generator, and ramp-limit requirements.",
     figures: [
       {
         src: "/product03-opf-summary.png",
-        alt: "WattsMIND Grid Agent OPF and uncertain OPF summary with feasibility, objective gap, and decision latency",
+        alt: "MIND FM x (Grid Agent) OPF and uncertain OPF summary with feasibility, objective gap, and decision latency",
         caption:
           "Application 02 result summary: nominal OPF and branch-admittance-uncertain OPF on the IEEE 30-bus benchmark, including feasibility, objective quality, and decision latency.",
       },

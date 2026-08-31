@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { SiteNav } from "../components/SiteNav";
 
 export const metadata: Metadata = {
-  title: "Acknowledgment | WattsMIND Grid Agent",
+  title: "Acknowledgment | MIND FM x (Grid Agent)",
   description:
-    "Acknowledgment of sponsors and institutional collaborators for the WattsMIND Grid Agent research project.",
+    "Acknowledgment of sponsors and institutional collaborators for the MIND FM x (Grid Agent) research project.",
 };
 
 export default function AcknowledgmentPage() {
@@ -15,7 +15,7 @@ export default function AcknowledgmentPage() {
         <p className="eyebrow">Acknowledgment</p>
         <h1>Research support and institutional collaboration.</h1>
         <p>
-          The WattsMIND Grid Agent research effort acknowledges support and
+          The MIND FM x (Grid Agent) research effort acknowledges support and
           collaboration from federal sponsors and institutional partners
           advancing resilient, intelligent power-grid systems.
         </p>
@@ -52,7 +52,7 @@ export default function AcknowledgmentPage() {
         <article>
           <h3>UCF</h3>
           <p>
-            University of Central Florida collaboration on WattsMIND Grid Agent
+            University of Central Florida collaboration on MIND FM x (Grid Agent)
             research development and evaluation.
           </p>
         </article>

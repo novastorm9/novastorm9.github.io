@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { SiteNav } from "../components/SiteNav";
 
 export const metadata: Metadata = {
-  title: "Technology | WattsMIND Grid Agent",
+  title: "Technology | MIND FM x (Grid Agent)",
   description:
-    "How WattsMIND Grid Agent uses a Manifold-Informed Neural Dual-encoder, certification, and feasible control for electric power systems.",
+    "How MIND FM x (Grid Agent) uses a Manifold-Informed Neural Dual-encoder, certification, and feasible control for electric power systems.",
 };
 
 const steps = [
@@ -22,7 +22,7 @@ export default function TechnologyPage() {
         <p className="eyebrow">Technology</p>
         <h1>Zero-shot transfer with an operator-facing trust layer.</h1>
         <p>
-          WattsMIND Grid Agent stands for Manifold-Informed Neural Dual-encoder. The engine
+          MIND FM x (Grid Agent) stands for Manifold-Informed Neural Dual-encoder. The engine
           uses shared grid-state geometry to transfer across changing networks
           while still reporting when the transfer is valid.
         </p>

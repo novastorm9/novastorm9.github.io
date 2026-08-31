@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { SiteNav } from "../components/SiteNav";
 
 export const metadata: Metadata = {
-  title: "Validation | WattsMIND Grid Agent",
+  title: "Validation | MIND FM x (Grid Agent)",
   description:
-    "Technical validation for WattsMIND Grid Agent across state estimation, AC optimal power flow, and false-data localization.",
+    "Technical validation for MIND FM x (Grid Agent) across state estimation, AC optimal power flow, and false-data localization.",
 };
 
 const results = [

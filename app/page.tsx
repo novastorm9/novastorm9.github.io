@@ -109,9 +109,9 @@ const papers = [
 ];
 
 export const metadata: Metadata = {
-  title: "WattsMIND Grid Agent | Certifiable AI for Power Grid Control",
+  title: "MIND FM x (Grid Agent) | Certifiable AI for Power Grid Control",
   description:
-    "WattsMIND Grid Agent is a Manifold-Informed Neural Dual-encoder for certifiable power system monitoring, control, and market intelligence.",
+    "MIND is a Manifold-Informed Neural Dual-encoder for certifiable power system monitoring, control, and market intelligence.",
 };
 
 export default function Home() {
@@ -164,7 +164,7 @@ export default function Home() {
 
         <div className="section-heading">
           <p className="eyebrow">Research</p>
-          <h2>The technology behind WattsMIND Grid Agent</h2>
+          <h2>The technology behind MIND FM x (Grid Agent)</h2>
         </div>
 
         <div className="paper-grid">
@@ -209,7 +209,7 @@ export default function Home() {
         <figure className="cockpit-visual">
           <img
             src="/grid-agent-cockpit.png"
-            alt="WattsMIND Grid Agent operator cockpit showing topology, certification, and control recommendation panels"
+            alt="MIND FM x (Grid Agent) operator cockpit showing topology, certification, and control recommendation panels"
           />
         </figure>
       </section>
@@ -229,7 +229,7 @@ export default function Home() {
         </div>
 
         <div className="architecture-layout">
-          <div className="architecture-visual" aria-label="WattsMIND Grid Agent model stack">
+          <div className="architecture-visual" aria-label="MIND FM x (Grid Agent) model stack">
             <div className="architecture-column input-column">
               <span>Grid inputs</span>
               <div>DSS / topology</div>
@@ -237,7 +237,7 @@ export default function Home() {
               <div>Loads & devices</div>
             </div>
             <div className="architecture-core">
-              <span>WattsMIND Grid Agent engine</span>
+              <span>MIND FM x (Grid Agent) engine</span>
               <strong>Manifold-Informed Neural Dual-encoder</strong>
               <p>Transferable grid representation with per-instance feasibility checks.</p>
             </div>

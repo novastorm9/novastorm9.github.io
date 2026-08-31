@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { SiteNav } from "../components/SiteNav";
 
 export const metadata: Metadata = {
-  title: "Contact | WattsMIND Grid Agent",
+  title: "Contact | MIND FM x (Grid Agent)",
   description:
-    "Contact the WattsMIND Grid Agent research team for research collaborations, benchmark discussions, and project questions.",
+    "Contact the MIND FM x (Grid Agent) research team for research collaborations, benchmark discussions, and project questions.",
 };
 
 export default function ContactPage() {
@@ -14,7 +14,7 @@ export default function ContactPage() {
       <section className="contact-layout">
         <div className="internal-hero contact-copy">
           <p className="eyebrow">Contact</p>
-          <h1>Contact the WattsMIND Grid Agent research team.</h1>
+          <h1>Contact the MIND FM x (Grid Agent) research team.</h1>
           <p>
             For research collaborations, benchmark discussions, and project
             questions, please contact the team members below.

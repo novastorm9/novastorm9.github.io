@@ -4,9 +4,9 @@ export const products = [
     name: "Distribution Utilities & Rural Cooperatives",
     shortName: "Utilities & Co-ops",
     eyebrow: "Theme 01",
-    summary: "WattsMIND Grid Agent for zero-shot distribution power-flow solving and cyber-resilient control on SmartDSS systems the model has never seen, with 0 system-specific fine-tuning.",
+    summary: "MIND FM x (Grid Agent) for zero-shot distribution power-flow solving and cyber-resilient control on SmartDSS systems the model has never seen, with 0 system-specific fine-tuning.",
     headline: "Zero-shot intelligence for unseen distribution systems.",
-    lead: "WattsMIND Grid Agent processes OpenDSS circuit files, learns the physical structure of SmartDSS-randomized distribution systems, and supports two core workflows: fast learned power-flow solves and agent control for cyber-attack mitigation, with 0 system-specific fine-tuning at test time.",
+    lead: "MIND FM x (Grid Agent) processes OpenDSS circuit files, learns the physical structure of SmartDSS-randomized distribution systems, and supports two core workflows: fast learned power-flow solves and agent control for cyber-attack mitigation, with 0 system-specific fine-tuning at test time.",
     applications: [
       "Fast three-phase power-flow voltage solves",
       "Zero-shot phasor solutions on unseen circuit topologies",
@@ -28,7 +28,7 @@ export const products = [
     eyebrow: "Theme 02",
     summary: "A certifiable AI engine for grid software prototypes and research services that need faster analytics inside existing study workflows.",
     headline: "Grid intelligence for embeddable research engines.",
-    lead: "WattsMIND Grid Agent can be delivered as an API, on-prem engine, or model component inside planning, monitoring, and control prototypes used for utility and operator studies.",
+    lead: "MIND FM x (Grid Agent) can be delivered as an API, on-prem engine, or model component inside planning, monitoring, and control prototypes used for utility and operator studies.",
     applications: [
       "N-k contingency screening modules",
       "Planning-study acceleration",
@@ -48,9 +48,9 @@ export const products = [
     name: "Transmission Operators & ISOs/RTOs",
     shortName: "Transmission & ISOs/RTOs",
     eyebrow: "Theme 03",
-    summary: "WattsMIND Grid Agent for transmission operating intelligence: fast voltage prediction, contingency screening, dispatch feasibility, market sensitivity, and operator verification across changing grid states.",
+    summary: "MIND FM x (Grid Agent) for transmission operating intelligence: fast voltage prediction, contingency screening, dispatch feasibility, market sensitivity, and operator verification across changing grid states.",
     headline: "Transmission intelligence across screening, dispatch, markets, and verification.",
-    lead: "For transmission operators and ISOs/RTOs, WattsMIND Grid Agent turns grid cases, operating state, topology changes, objectives, and reliability constraints into fast voltage prediction, contingency screening, dispatch feasibility, market sensitivity, and verification targets.",
+    lead: "For transmission operators and ISOs/RTOs, MIND FM x (Grid Agent) turns grid cases, operating state, topology changes, objectives, and reliability constraints into fast voltage prediction, contingency screening, dispatch feasibility, market sensitivity, and verification targets.",
     applications: [
       "N-k contingency and voltage prediction",
       "Fast screening for stressed buses and operating constraints",
@@ -73,7 +73,7 @@ export const products = [
     eyebrow: "Theme 04",
     summary: "Physics-aware congestion and dispatch intelligence for trading, asset optimization, and market analytics teams.",
     headline: "Market signals grounded in the physics of the grid.",
-    lead: "WattsMIND Grid Agent helps market participants reason about congestion, dispatch feasibility, and network constraints without treating the power system as a black box.",
+    lead: "MIND FM x (Grid Agent) helps market participants reason about congestion, dispatch feasibility, and network constraints without treating the power system as a black box.",
     applications: [
       "Congestion intelligence",
       "Dispatch and constraint forecasting",
@@ -95,7 +95,7 @@ export const products = [
     eyebrow: "Theme 05",
     summary: "Grid-aware coordination for data centers and other controllable loads that need operational flexibility.",
     headline: "Make flexible demand behave like a grid asset.",
-    lead: "For data centers and large controllable loads, WattsMIND Grid Agent supports interconnection insight, risk-aware operation, and real-time flexibility decisions aligned with grid conditions.",
+    lead: "For data centers and large controllable loads, MIND FM x (Grid Agent) supports interconnection insight, risk-aware operation, and real-time flexibility decisions aligned with grid conditions.",
     applications: [
       "Data-center flexibility scheduling",
       "Grid-aware load coordination",

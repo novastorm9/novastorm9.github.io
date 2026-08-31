@@ -12,9 +12,9 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const siteTitle = "WattsMIND Grid Agent | Certifiable AI for Power Grid Control";
+const siteTitle = "MIND FM x (Grid Agent) | Certifiable AI for Power Grid Control";
 const siteDescription =
-  "WattsMIND Grid Agent is a Manifold-Informed Neural Dual-encoder for zero-shot power system monitoring, control, and market intelligence.";
+  "MIND is a Manifold-Informed Neural Dual-encoder for zero-shot power system monitoring, control, and market intelligence.";
 
 // Static export has no per-request headers, so the public origin is fixed here.
 const siteUrl = "https://gridmind.ece.cornell.edu";
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
         url: "/og.png",
         width: 1200,
         height: 630,
-        alt: "WattsMIND Grid Agent certifiable AI for power grid control",
+        alt: "MIND FM x (Grid Agent) certifiable AI for power grid control",
       },
     ],
   },

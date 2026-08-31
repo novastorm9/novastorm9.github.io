@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { SiteNav } from "../components/SiteNav";
 
 export const metadata: Metadata = {
-  title: "Platform | WattsMIND Grid Agent",
+  title: "Platform | MIND FM x (Grid Agent)",
   description:
-    "WattsMIND Grid Agent is a Manifold-Informed Neural Dual-encoder that connects sparse measurements, transfer learning, certification, and feasible control for power-system operations.",
+    "MIND is a Manifold-Informed Neural Dual-encoder that connects sparse measurements, transfer learning, certification, and feasible control for power-system operations.",
 };
 
 const modules = [
@@ -22,7 +22,7 @@ export default function PlatformPage() {
         <p className="eyebrow">Platform</p>
         <h1>A grid AI engine designed for operations, not demos.</h1>
         <p>
-          WattsMIND Grid Agent is the Manifold-Informed Neural Dual-encoder behind the
+          MIND is the Manifold-Informed Neural Dual-encoder behind the
           platform: a deployable layer for topology transfer, operator trust,
           and feasible control inside utility workflows, research software
           prototypes, planning studies, and flexible-load operations.

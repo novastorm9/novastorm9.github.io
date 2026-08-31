@@ -5,7 +5,7 @@ import { products } from "../product-data";
 const product = products[2];
 
 export const metadata: Metadata = {
-  title: `${product.name} | WattsMIND Grid Agent`,
+  title: `${product.name} | MIND FM x (Grid Agent)`,
   description: product.summary,
 };
 
