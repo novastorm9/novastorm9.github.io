@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 const siteTitle = "WattsMIND Grid Agent | Certifiable AI for Power Grid Control";
 const siteDescription =
-  "WattsMIND is a Manifold-Informed Neural Dual-encoder for zero-shot power system monitoring, control, and market intelligence.";
+  "WattsMIND Grid Agent is a Manifold-Informed Neural Dual-encoder for zero-shot power system monitoring, control, and market intelligence.";
 
 // Static export has no per-request headers, so the public origin is fixed here.
 const siteUrl = "https://gridmind.ece.cornell.edu";

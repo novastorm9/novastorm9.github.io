@@ -4,7 +4,7 @@ import { SiteNav } from "../components/SiteNav";
 export const metadata: Metadata = {
   title: "Platform | WattsMIND Grid Agent",
   description:
-    "WattsMIND is a Manifold-Informed Neural Dual-encoder that connects sparse measurements, transfer learning, certification, and feasible control for power-system operations.",
+    "WattsMIND Grid Agent is a Manifold-Informed Neural Dual-encoder that connects sparse measurements, transfer learning, certification, and feasible control for power-system operations.",
 };
 
 const modules = [
@@ -22,10 +22,10 @@ export default function PlatformPage() {
         <p className="eyebrow">Platform</p>
         <h1>A grid AI engine designed for operations, not demos.</h1>
         <p>
-          WattsMIND is the Manifold-Informed Neural Dual-encoder behind the
+          WattsMIND Grid Agent is the Manifold-Informed Neural Dual-encoder behind the
           platform: a deployable layer for topology transfer, operator trust,
-          and feasible control inside utility workflows, vendor software,
-          market analytics, and flexible-load operations.
+          and feasible control inside utility workflows, research software
+          prototypes, planning studies, and flexible-load operations.
         </p>
       </section>
       <section className="internal-grid">
@@ -38,8 +38,8 @@ export default function PlatformPage() {
       </section>
       <section className="next-links">
         <a href="/technology">Technology</a>
-        <a href="/#products">Products</a>
-        <a href="/contact">Discuss a pilot</a>
+        <a href="/#themes">Research Themes</a>
+        <a href="/contact">Discuss a demonstration</a>
       </section>
     </main>
   );

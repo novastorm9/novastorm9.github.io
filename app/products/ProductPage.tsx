@@ -56,18 +56,6 @@ type ProductDemo = {
   }[];
 };
 
-function TransmissionWorldModel() {
-  return (
-    <figure className="method-world-model-card">
-      <img
-        src="/product03-world-model-reference.png"
-        alt="Trajectory-based world-model diagram with encoder, decoder, and reusable state manifold"
-      />
-      <figcaption>World model view</figcaption>
-    </figure>
-  );
-}
-
 function TransmissionFrameworkScope() {
   const items = [
     "Voltage prediction",
@@ -128,7 +116,7 @@ const productSetups: Partial<Record<Product["slug"], ProductSetup>> = {
     ariaLabel: "Transmission contingency framework",
     eyebrow: "High-level framework",
     title: "One transmission engine, multiple operating questions.",
-    body: "WattsMIND is short for Manifold-Informed Neural Dual-encoder. For transmission operations, it maps grid cases, injections, topology changes, reliability constraints, dispatch context, and market conditions into decision products: voltage prediction, contingency screening, constraint-risk ranking, dispatch feasibility, market sensitivity, and verification targets.",
+    body: "WattsMIND Grid Agent is short for Manifold-Informed Neural Dual-encoder. For transmission operations, it maps grid cases, injections, topology changes, reliability constraints, dispatch context, and market conditions into decision products: voltage prediction, contingency screening, constraint-risk ranking, dispatch feasibility, market sensitivity, and verification targets.",
     figures: [
       {
         src: "/product03-framework.png",
@@ -227,7 +215,7 @@ const productEvidence: Partial<Record<Product["slug"], ProductEvidence>> = {
       },
       {
         src: "/product01-results-summary.png",
-        alt: "Product 01 experimental result summary with training curve, model comparison, inference benchmark, and prediction trace",
+        alt: "Theme 01 experimental result summary with training curve, model comparison, inference benchmark, and prediction trace",
         caption:
           "Validation-selected training curve, held-out SmartDSS random-system power-flow evaluation, cached inference benchmark, and prediction trace from the SING result set.",
       },
@@ -395,7 +383,7 @@ export function ProductPage({ product }: ProductPageProps) {
   const demo = productDemos[product.slug];
   const evidence = productEvidence[product.slug];
   const controlEvidence = productControlEvidence[product.slug];
-  const hasMethodWorldModel = product.slug === "transmission-isos";
+  const isTransmissionProduct = product.slug === "transmission-isos";
   const evidenceSections = [evidence, controlEvidence].filter(
     (item): item is ProductEvidence => Boolean(item),
   );
@@ -442,21 +430,21 @@ export function ProductPage({ product }: ProductPageProps) {
       </section>
 
       {setup ? (
-        <section className="setup-section" aria-label={setup.ariaLabel}>
+        <section
+          className={`setup-section ${product.slug === "transmission-isos" ? "transmission-setup" : ""}`}
+          aria-label={setup.ariaLabel}
+        >
           <div className="section-heading split-heading">
             <div>
               <p className="eyebrow">{setup.eyebrow}</p>
               <h2>{setup.title}</h2>
-              {hasMethodWorldModel ? <TransmissionFrameworkScope /> : null}
+              {isTransmissionProduct ? <TransmissionFrameworkScope /> : null}
             </div>
             {demo ? (
               <div className="setup-heading-side">
                 <p>{setup.body}</p>
-                {hasMethodWorldModel ? (
-                  <div className="method-view-grid">
-                    <TransmissionWorldModel />
-                    {demoPanel}
-                  </div>
+                {isTransmissionProduct ? (
+                  <div className="method-view-grid">{demoPanel}</div>
                 ) : (
                   demoPanel
                 )}
@@ -536,14 +524,14 @@ export function ProductPage({ product }: ProductPageProps) {
       ))}
 
       <section className="detail-system" aria-label={`${product.shortName} system view`}>
-        <div className="workflow-panel" aria-label="Product workflow">
+        <div className="workflow-panel" aria-label="Research theme workflow">
           <p className="eyebrow">Workflow</p>
           <h2>
             {workflow
               ? product.slug === "transmission-isos"
                 ? "From transmission context to screening, dispatch, and verification."
                 : "From DSS model to solver and control."
-              : "A product workflow built around the grid engine."}
+              : "A research workflow built around the grid engine."}
           </h2>
           <div className="workflow-steps">
             {workflowItems.map((item) => (
@@ -577,14 +565,14 @@ export function ProductPage({ product }: ProductPageProps) {
 
       <section className="detail-cta">
         <p className="eyebrow">Next step</p>
-        <h2>Evaluate this product line against a real grid workflow.</h2>
+        <h2>Evaluate this research theme against a real grid workflow.</h2>
         <a className="primary-action" href="/contact">
-          Discuss fit
+          Discuss a demonstration
         </a>
       </section>
 
       <section className="product-nav-section">
-        <p className="eyebrow">All products</p>
+        <p className="eyebrow">All research themes</p>
         <div className="product-nav-grid">
           {products.map((item) => (
             <a

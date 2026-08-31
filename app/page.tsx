@@ -111,7 +111,7 @@ const papers = [
 export const metadata: Metadata = {
   title: "WattsMIND Grid Agent | Certifiable AI for Power Grid Control",
   description:
-    "WattsMIND is a Manifold-Informed Neural Dual-encoder for certifiable power system monitoring, control, and market intelligence.",
+    "WattsMIND Grid Agent is a Manifold-Informed Neural Dual-encoder for certifiable power system monitoring, control, and market intelligence.",
 };
 
 export default function Home() {
@@ -221,9 +221,10 @@ export default function Home() {
             <h2>Transfer, certify, control.</h2>
           </div>
           <p>
-            The product is an engine, not a workflow wrapper. It is designed to
-            sit inside operations, planning, vendor platforms, and market
-            analytics.
+            The platform is a research demonstration engine for studying how
+            transfer, certification, and feasible control can support grid
+            operations, planning studies, software prototypes, and market-aware
+            grid analytics.
           </p>
         </div>
 
@@ -241,7 +242,7 @@ export default function Home() {
               <p>Transferable grid representation with per-instance feasibility checks.</p>
             </div>
             <div className="architecture-column output-column">
-              <span>Products</span>
+              <span>Research outputs</span>
               <div>Power-flow solve</div>
               <div>Certificate</div>
               <div>Control action</div>
@@ -274,7 +275,7 @@ export default function Home() {
         <div className="journey-grid">
           <a href="/platform">
             <span>Platform</span>
-            <strong>What is the product?</strong>
+            <strong>What is the platform?</strong>
           </a>
           <a href="/technology">
             <span>Technology</span>
@@ -284,17 +285,17 @@ export default function Home() {
             <span>Validation</span>
             <strong>What has been demonstrated?</strong>
           </a>
-          <a href="/customers">
-            <span>Customers</span>
-            <strong>Who is it built for?</strong>
+          <a href="#themes">
+            <span>Research Themes</span>
+            <strong>Where can the platform apply?</strong>
           </a>
         </div>
       </section>
 
-      <section className="products-section" id="products">
+      <section className="products-section" id="themes">
         <div className="section-heading">
-          <p className="eyebrow">Product lines</p>
-          <h2>Five focused products, one underlying grid engine.</h2>
+          <p className="eyebrow">Research themes</p>
+          <h2>Five application themes, one underlying grid engine.</h2>
         </div>
         <div className="product-mosaic">
           {products.map((product) => (
@@ -327,10 +328,10 @@ export default function Home() {
       </section>
 
       <section className="cta-section">
-        <p className="eyebrow">Customer discovery</p>
-        <h2>Building the first wedge with operators, vendors, and flexible-load teams.</h2>
+        <p className="eyebrow">Research collaboration</p>
+        <h2>Connecting demonstrations with real grid workflows and datasets.</h2>
         <a className="primary-action" href="/contact">
-          Discuss a pilot
+          Discuss a demonstration
         </a>
       </section>
     </main>

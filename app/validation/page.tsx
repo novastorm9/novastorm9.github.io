@@ -23,8 +23,8 @@ export default function ValidationPage() {
         <h1>Benchmarks focused on transfer, feasibility, and speed.</h1>
         <p>
           The validation program is organized around the operational questions
-          buyers ask first: does it transfer, is it fast enough, and can the
-          system tell me when to trust it?
+          research and operator teams ask first: does it transfer, is it fast
+          enough, and can the system tell me when to trust it?
         </p>
       </section>
       <section className="result-grid">
@@ -37,7 +37,7 @@ export default function ValidationPage() {
       </section>
       <section className="next-links">
         <a href="/technology">How it works</a>
-        <a href="/customers">Customer segments</a>
+        <a href="/#themes">Research themes</a>
         <a href="/contact">Request benchmark discussion</a>
       </section>
     </main>

@@ -4,7 +4,7 @@ import { SiteNav } from "../components/SiteNav";
 export const metadata: Metadata = {
   title: "Contact | WattsMIND Grid Agent",
   description:
-    "Contact WattsMIND Grid Agent for customer discovery, pilot discussions, and research partnerships.",
+    "Contact the WattsMIND Grid Agent research team for research collaborations, benchmark discussions, and project questions.",
 };
 
 export default function ContactPage() {
@@ -14,23 +14,41 @@ export default function ContactPage() {
       <section className="contact-layout">
         <div className="internal-hero contact-copy">
           <p className="eyebrow">Contact</p>
-          <h1>Bring a real grid workflow to the conversation.</h1>
+          <h1>Contact the WattsMIND Grid Agent research team.</h1>
           <p>
-            We are prioritizing conversations with utilities, cooperatives,
-            software vendors, operators, market teams, and large flexible-load
-            operators.
+            For research collaborations, benchmark discussions, and project
+            questions, please contact the team members below.
           </p>
-          <a className="primary-action" href="mailto:hello@grid-agent.ai">
-            hello@grid-agent.ai
+          <a
+            className="primary-action"
+            href="mailto:as337@cornell.edu,tong.wu@ucf.edu,ac2458@cornell.edu,arnold37@llnl.gov"
+          >
+            Email the research team
           </a>
         </div>
         <div className="contact-panel">
-          <span>Discovery brief</span>
-          <h3>Helpful context</h3>
-          <p>Customer segment</p>
-          <p>Target workflow</p>
-          <p>Available network or benchmark data</p>
-          <p>Deployment constraints</p>
+          <span>Research team</span>
+          <h3>Contacts</h3>
+          <p>
+            <strong>Anna Scaglione</strong>
+            <br />
+            <a href="mailto:as337@cornell.edu">as337@cornell.edu</a>
+          </p>
+          <p>
+            <strong>Tong Wu</strong>
+            <br />
+            <a href="mailto:tong.wu@ucf.edu">tong.wu@ucf.edu</a>
+          </p>
+          <p>
+            <strong>Andrew Campbell</strong>
+            <br />
+            <a href="mailto:ac2458@cornell.edu">ac2458@cornell.edu</a>
+          </p>
+          <p>
+            <strong>Daniel Brian Arnold</strong>
+            <br />
+            <a href="mailto:arnold37@llnl.gov">arnold37@llnl.gov</a>
+          </p>
         </div>
       </section>
     </main>
